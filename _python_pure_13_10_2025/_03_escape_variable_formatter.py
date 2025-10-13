@@ -5,7 +5,6 @@ name="Hamit"
 surname="Mızrak"
 print("Adım: ", name, " Soyadım: ", surname)       # 1.YOL: Okunabilirliği(-)
 
-
 #################################################################################
 ####### Formatter #########################################################
 # 2.YOL
@@ -13,7 +12,6 @@ print("Adım: ", name, " Soyadım: ", surname)       # 1.YOL: Okunabilirliği(-)
 # d: decimal
 # f: float
 print("Adım:  %s  Soyadım:  %s "%(name,surname))   # 2.YOL: Okunabilirliği(+)
-
 
 # 3.YOL
 # Python >=3.6
