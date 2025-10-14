@@ -1,19 +1,19 @@
 #################################################################################
 ####### Variable(str) #########################################################
-# 1.YOL
+# 1.YOL ==> (Okunabilirliği(-), yazılabilirlik(-))
 name="Hamit"
 surname="Mızrak"
-print("Adım: ", name, " Soyadım: ", surname)       # 1.YOL: Okunabilirliği(-)
+print("Adım: ", name, " Soyadım: ", surname)
 
 #################################################################################
 ####### Formatter #########################################################
-# 2.YOL
+# 2.YOL  ==> Okunabilirliği(-), yazılabilirlik(+)
 # s: string
 # d: decimal
 # f: float
 print("Adım:  %s  Soyadım:  %s "%(name,surname))   # 2.YOL: Okunabilirliği(+)
 
-# 3.YOL
+# 3.YOL   ==> Okunabilirliği(-), yazılabilirlik(+)
 # Python >=3.6
 # dikkat: f anlamı formatter
 print(f"Adım:  {name}  Soyadım:  {surname}")   # 3.YOL: Okunabilirliği(+)

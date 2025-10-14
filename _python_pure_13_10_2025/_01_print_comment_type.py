@@ -13,7 +13,7 @@ print("Python öğreniyorum")
 
 # string'ten birden fazla değer yazdırmak istiyorsam
 print("Python","Java","Js","Nodejs")
-print("Python" "Java" "Js" "Nodejs")
+print("Python" "Java" "Js" "Nodejs") # Virgülsüz yazarsak kelimeleri bitişik yazar
 
 # Tam sayı
 print(1234)
