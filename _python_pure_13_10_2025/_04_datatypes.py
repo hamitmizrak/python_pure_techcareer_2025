@@ -73,6 +73,7 @@ print(f"tuple(immutable) => {my_tuple}, Types => {type(my_tuple)}")
 #################################################################################
 ####### Set(Benzersiz) ##########################################################
 # Set: Her elemanın benzersiz olduğunu göstermek için
+# True==1,  False==0 , eğer elemanlarda 1 varsa True demektir zaten
 print(f"set(unique) => {my_set}, Types => {type(my_set)}")
 
 
