@@ -15,7 +15,7 @@ print("Adım:  %s  Soyadım:  %s "%(name,surname))   # 2.YOL: Okunabilirliği(+)
 
 # 3.YOL   ==> Okunabilirliği(-), yazılabilirlik(+)
 # Python >=3.6
-# dikkat: f anlamı formatter
+# dikkat: f anlamı formatter yani f-string
 print(f"Adım:  {name}  Soyadım:  {surname}")   # 3.YOL: Okunabilirliği(+)
 
 #################################################################################

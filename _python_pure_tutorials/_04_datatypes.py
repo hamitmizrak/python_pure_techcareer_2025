@@ -1,15 +1,25 @@
 # Dynamics Types
 # Değişken isimlendirme ==> kullanalım (_ ) yani  (yani snake_case)
 
-# 1.YOL ==> Normal değişken türü
+# a-) Tek değişken atama
 data1=1
 data2=2
 data3=3
 print(data1,data2,data3)
 
-# 2.YOL ==> Değişekneleri tek satırda göstermek
+# b-) Birden fazla değişken atama
 data4,data5,data6=44,55,66
 print(data4,data5,data6)
+
+# c-) Aynı değerli birden fazla değişkene atama
+data7=data8=data9=77
+print(data7)
+
+# d-) Değişkenlerin
+x,y=5,10
+print(x,y)
+x,y=y,x
+print(x,y)
 
 #################################################################################
 ####### Data Types ##############################################################
@@ -17,12 +27,22 @@ print(data4,data5,data6)
 number1 = 10   # Tam sayılar ==> (Pozitif)
 number2 = +10  # Tam sayılar ==> (Pozitif)
 number3 = -10  # Tam sayılar ==> (Negatif)
+
 PI=3.14159     # Tam sayılar ==> (Virgüllü)
+
+number4 =None
+print(f"boş değer: {number4} type {type(number4)}")
+
 name="Hamit"   # string
+
 is_login= True # boolean
+
 my_list  = [1,2,3,4,5, "Malatya", 14.53, True, False]  # list
+
 my_tuple = (1,2,3,4,5, "Malatya", 14.53, True, False)  # tuple => değiştirilemez(immutable)
+
 my_set   = {1,1,1,1,2,3,4,5, "Malatya", 14.53, True, False}  # set => benzersiz eleman(unique)
+
 my_dictionary ={
     "name":"Hamit",
     "surname":"Mızrak",
@@ -30,7 +50,7 @@ my_dictionary ={
 }
 
 # 8 tane
-# int, float, str, bool, list, tuple, set, dict  ==> hint types
+# int, float, NoneType, str, bool, list, tuple, set, dict  ==> hint types
 #################################################################################
 ####### int (Number) #############################################################
 # types: Verinin türünü öğrenmek istiyorsak
