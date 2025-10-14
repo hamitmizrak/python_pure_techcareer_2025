@@ -29,8 +29,8 @@ my_dictionary ={
     "is_login":True
 }
 
-# 8 tane tür
-# int, float, str, bool, list, tuple, set, dict
+# 8 tane
+# int, float, str, bool, list, tuple, set, dict  ==> hint types
 #################################################################################
 ####### int (Number) #############################################################
 # types: Verinin türünü öğrenmek istiyorsak
