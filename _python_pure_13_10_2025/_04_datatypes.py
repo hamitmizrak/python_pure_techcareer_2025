@@ -1,4 +1,3 @@
-
 # Dynamics Types
 # Değişken isimlendirme ==> kullanalım (_ ) yani  (yani snake_case)
 
