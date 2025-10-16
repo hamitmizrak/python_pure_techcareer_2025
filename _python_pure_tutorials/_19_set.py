@@ -9,7 +9,7 @@ empty_set = set()
 
 # Set
 my_set1 = {1, 2, 2, 3}
-print(my_set1)
+print(f"{my_set1}")
 
 # Not: Setler sırasızdır(Unordered). Yani öğeler belirli bir sırada saklanmaz ve indeksleme kullanılamaz.
 # Liste veya başka bir iterable'dan set oluşturma
@@ -77,8 +77,3 @@ print(frozen)   #Çıktı: frozenset({1, 2, 3})
 
 # Değiştirmeye çalışırsanız hata alırsınız
 # frozen.add(4)   #AttributeError
-
-
-
-
-

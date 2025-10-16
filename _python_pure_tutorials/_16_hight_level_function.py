@@ -1,11 +1,13 @@
 ##########################################################################################
 #### Hight Level Function#################################################################
 from itertools import zip_longest, chain
+from functools import reduce
 
 sayilar= [9,1,2,3,4,5,6]
 
 # 1- map(function, iterable)
 # Bir fonksiyonu bir iterable’ın her öğesine uygular ve sonuçları yeni bir iterable olarak döndürür.
+# lambda ==>
 map_result= map(lambda x:x*2, sayilar)
 # print(f"{map_result}")
 print(list(map_result))
@@ -17,16 +19,17 @@ print(list(filter_result))
 
 # 3- reduce(function, iterable, initializer)
 # Bir fonksiyonu bir iterable’ın öğelerine soldan sağa doğru uygular ve tek bir değer döndürür.
-from functools import reduce
 reduce_result= reduce(lambda x,y:x+y, sayilar)
 print(reduce_result)
 
 # 4- sorted(iterable, key=None, reverse=False), reversed(iterable)
 # Bir iterable’ı belirli bir kritere göre sıralar ve sıralanmış bir liste döndürür.
-# Küçükten Büyüğe
+# Küçükten Büyüğe  ==>  1,2,3,4,5,6,9
 print("Küçükten Büyüğe: ", sorted(sayilar))
-# Büyükten Küçüğe
+# Sayıları tersten yazdırmak  9,1,2,3,4,5,6  ==> 6,5,4,3,2,1,9
 print("Tersten yazdır  : ",list(reversed(sayilar)))
+
+# Büyükten Küçüğe 1,2,3,4,5,6,9  => 9,6,5,4,3,2,1
 print("Büyükten Küçüğe : ",list(reversed(sorted(sayilar))))
 
 # 5- zip(): İki veya daha fazla iterable’ı birleştirerek bir dizi tuple oluşturur.
@@ -56,7 +59,6 @@ print(f"min: {min(sayilar)}")
 print(f"max: {max(sayilar)}")
 print(f"len: {len(sayilar)}")
 print(f"sum: {sum(sayilar)}")
-
 
 # 7- isinstance(): Bir nesnenin belirli bir veri tipine ait olup olmadığını kontrol eder.
 # type:

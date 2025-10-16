@@ -21,7 +21,7 @@ for temp in range(1,10000):    # Step-1 (1-10 arasında olacak ancak biz 10.000 
     toplam +=temp              # 5 hariç ve 1...10 kadar toplama yap
 
     # Tek işlemler
-    tekler = [ temp for temp in range(1,11) if temp %2 ==1]
+    tekler = [temp for temp in range(1, 11) if temp % 2 == 1 and temp!=5]
     tek_toplam = sum(tekler)
 
     # Çiftler işlemler
@@ -37,7 +37,6 @@ print(f" Tek sayılar toplamı {tek_toplam}\n")
 
 print(f" Çift sayılar {ciftler}")
 print(f" Çift sayılar toplamı {cift_toplam}")
-
 
 
 
