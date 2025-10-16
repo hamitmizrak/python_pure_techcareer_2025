@@ -15,31 +15,36 @@ version_info(){
 }
 version_info
 
-disable=SC2162
+#disable=SC2162
 #########################################################
 # Database File Delete
 requirements_txt() {
 
-    # Geri Sayım
+    # Geri Sayım (dosya varsa çalışır)
     ./shell_countdown.sh
 
-    echo -e "\n###### ${INSTALL} ######  "
-#    disable=SC2162
-    read -p "requirements ekleyenecektir ? e/h " requirements
+    echo -e "\n###### ${INSTALL:-REQUIREMENTS} ######"
+    read -rp "requirements eklenecektir? e/h: " requirements
+
     if [[ $requirements == "e" || $requirements == "E" ]]; then
         echo -e "Bulunduğum dizin => $(pwd)\n"
-        echo -e "requirents_txt oluşturulmaya Başladı ..."
-         # Geri Sayım
+        echo -e "requirements.txt oluşturulmaya başladı ..."
         ./shell_countdown.sh
-        rm -rf requirents.txt
+
+        rm -f requirements.txt
         sleep 1
-        cat > requirements.txt << 'EOF'
-        # veri türü zorunluluğu
-        beartype>=0.19.0
-        #başka paketler
-        EOF
+
+        # DİKKAT: 'EOF' satırı en başta, boşluksuz olmalı
+        cat > requirements.txt <<'EOF'
+# veri türü zorunluluğu
+beartype>=0.19.0
+# başka paketler
+EOF
+
+        echo "✓ requirements.txt yazıldı."
     else
-        echo -e "requirents_txt oluşturulmadı !!!"
+        echo -e "requirements.txt oluşturulmadı!"
     fi
 }
+
 requirements_txt

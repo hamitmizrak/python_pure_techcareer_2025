@@ -1,7 +1,15 @@
+################################################################################
+#### Lambda Expression##########################################################
+# lambda => lambda
 
+# Normal function
+def normal_function (a,b):
+    return a+b
+print(f"{normal_function(4,5)}")
 
-
-
+# Lambda Expression
+lambda_function = lambda a,b:a+b
+print(f"{lambda_function(4,5)}")
 
 
 ################################################################################
