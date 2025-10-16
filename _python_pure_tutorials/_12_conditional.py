@@ -1,6 +1,7 @@
 ################################################################################
 #### Conditional ###############################################################
 
+#### if else ###############################################################
 # Sayı Negatif mi, Pozitif mi ?
 # if else
 number:int=44
@@ -9,10 +10,13 @@ if number > 0:
 else:
     print(f"Negatif sayı")
 
+#### Ternary ###############################################################
 # Ternary
 ternary:int ="Pozitif sayı" if number > 0 else "Negatif sayı"
 print(f"{ternary}")
 
+
+#### if elif else ###############################################################
 # if elif else
 number_data:int=5
 if number_data==1:
@@ -28,7 +32,7 @@ elif number_data==5:
 else:
     print("1<=Sayı<=5 bunların dışında")
 
-
+#### if if elif else ###############################################################
 # İç içe if
 number_content:int=+15
 if number_content > 0:
@@ -40,15 +44,18 @@ if number_content > 0:
 else:
     print(f"Negatif sayı")
 
+
+#### pass ###############################################################
 # pass : Koşul bloklarında geçici olarak bir data  verilerini yapmamak için "pass" kullanırız
-number_input= int(input("Lütfen bir sayı giriniz"))
+number_input= int(input("\nLütfen bir sayı giriniz: "))
 if number_input > 0:
     print(f"Pozitif => ",end="")
-    if number_content % 2 ==0:
+    if number_input % 2 ==0:
         print(" Çift sayı")
-        if number_content %3==1:
+        if number_input %2==0:
             pass # Daha sonrasında buraya kod eklenecek
+            print("pass verisi")
     else:
-        print(number_content, f"Tek sayı")
+        print(number_input, f"Tek sayı")
 else:
     print(f"Negatif sayı")
