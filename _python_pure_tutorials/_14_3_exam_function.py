@@ -41,10 +41,8 @@ print(f" Çift sayılar toplamı {cift_toplam}")
 
 
 
-
-
 ################################################################################
-#### 2- (for veya while), break, continue, pass ###################################
+#### 2- (for veya while), break, continue, pass ################################
 # step-1) kullanıcı tarafından başlangıç ve bitiş sayıları verilsin
 # step-2) Başlangıç ile bitiş sayıları arasında sayıların toplamını yapınız ?
 # step-3) Eğer sayı eğer 10 sonra devam ediyorsa dur (döngüyü bitir) ?

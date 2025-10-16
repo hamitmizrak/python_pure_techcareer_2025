@@ -1,0 +1,98 @@
+#  requirements.txt Dosyasını Yükleme ve Kullanma
+#  pip install -r requirements.txt
+
+# Mevcut Bağımlılıkları Kaydetme: Eğer proje ortamınızda zaten yüklenmiş bağımlılıklar varsa, pip freeze ile bunları kaydedebilirsiniz:
+# pip freeze > requirements.txt
+
+# Bağımlılık Yönetimi:
+# Sanal bir ortam (venv) kullanarak bağımlılıkların sistem genelinden izole olmasını sağlayın.
+# python -m venv myenv
+# source myenv/bin/activate
+
+
+# 1. Temel Geliştirme ve Yardımcı Kütüphaneler
+# Bu kütüphaneler, Python ile genel geliştirme işlerinde yaygın olarak kullanılır:
+numpy==1.25.0          # Bilimsel hesaplamalar ve diziler için
+pandas==2.1.0          # Veri analizi ve veri işleme
+matplotlib==3.7.2      # Grafik ve görselleştirme
+seaborn==0.12.2        # Gelişmiş veri görselleştirme
+scipy==1.11.3          # Bilimsel hesaplama araçları
+
+
+# 2. Web Geliştirme
+# Eğer bir web uygulaması geliştiriyorsanız:
+django==4.2.5          # Django web çerçevesi
+flask==2.3.2           # Flask web çerçevesi
+fastapi==0.103.0       # Hızlı ve modern API geliştirme
+gunicorn==21.1.0       # Flask ve FastAPI için WSGI HTTP sunucusu
+
+
+# 3. Veritabanı İşlemleri
+# Veritabanı bağlantıları ve ORM için kullanabileceğiniz kütüphaneler:
+sqlalchemy==2.1.0          # Veritabanı ORM ve SQL araçları
+psycopg2-binary==2.9.8     # PostgreSQL bağlantısı
+mysql-connector-python==8.0.33  # MySQL bağlantısı
+pymongo==4.6.0             # MongoDB bağlantısı
+
+
+# 4. Test Araçları
+# Test yazarken yaygın olarak kullanılan kütüphaneler:
+pytest==7.4.2              # Test çerçevesi
+unittest2==1.1.0           # Gelişmiş unittest modülü
+pytest-django==4.5.2       # Django projeleri için pytest eklentisi
+coverage==7.3.0            # Kod kapsama analizi
+
+
+# 5. Makine Öğrenimi ve Yapay Zeka
+# Makine öğrenimi veya veri bilimi projeleri için:
+scikit-learn==1.3.1        # Makine öğrenimi algoritmaları
+tensorflow==2.14.0         # Derin öğrenme çerçevesi
+torch==2.1.0               # PyTorch derin öğrenme kütüphanesi
+keras==2.14.0              # TensorFlow için yüksek seviyeli API
+xgboost==1.7.6             # XGBoost algoritması
+lightgbm==4.1.0            # LightGBM algoritması
+
+
+# 6. API Geliştirme
+# API oluşturma veya tüketme işlemleri için:
+requests==2.31.0           # HTTP istemcisi
+httpx==0.24.0              # Asenkron HTTP istemcisi
+flask-restful==0.4.0       # Flask REST API geliştirme
+marshmallow==3.20.1        # JSON serileştirme ve doğrulama
+
+
+# 7. Dosya İşlemleri
+# Dosya işlemleri ve belge oluşturma için yaygın kullanılan kütüphaneler:
+openpyxl==3.1.3            # Excel dosyaları işleme
+xlrd==2.0.1                # Eski Excel dosyalarını okuma
+python-docx==0.8.11        # Word dosyalarını işleme
+PyPDF2==3.0.1              # PDF işleme
+
+
+# 8. GUI Geliştirme
+# Masaüstü uygulamaları geliştirirken kullanılan kütüphaneler:
+PyQt5==5.15.9              # PyQt GUI araçları
+tkinter                    # Python ile yerleşik GUI araçları
+Kivy==2.2.0                # Kivy ile mobil/multi-touch GUI
+
+#  9. Veri Çekme ve Web Scraping
+#  Web scraping projeleri için gerekli araçlar:
+beautifulsoup4==4.13.2     # HTML ve XML parsing
+scrapy==2.10.0             # Web scraping çerçevesi
+selenium==4.11.0           # Web tarayıcı otomasyonu
+
+# 10. Güvenlik ve Şifreleme
+# Güvenlik ve veri şifreleme işlemleri için:
+cryptography==41.1.0       # Şifreleme araçları
+bcrypt==4.0.2              # Şifreleme ve hashleme
+pyjwt==2.8.0               # JWT (JSON Web Token) işlemleri
+
+# 11. Docker ile Çalışma
+# Docker projelerinde veya konteyner tabanlı çalışmalarda kullanılabilecek kütüphaneler:
+docker==6.2.0              # Docker API
+python-dotenv==1.1.0       # Ortam değişkenlerini yönetme
+
+# 12. Performans Optimizasyonu
+# Yüksek performanslı uygulamalarda kullanabileceğiniz kütüphaneler:
+cython==3.0.2              # Python kodunu C'ye derleme
+uvloop==0.17.0             # Hızlı event loop
