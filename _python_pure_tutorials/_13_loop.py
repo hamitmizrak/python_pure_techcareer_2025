@@ -44,11 +44,4 @@ while data<5:
     print(data) # sonsuz döngüdür dikkat
     data += 1
 
-################################################################################
-#### (for veya while), break, continue, pass ###################################
-# step-1) 1-10 arasında sayıların toplamını yapınız ?
-# step-2) Eğer sayı eğer 10 sonra devam ediyorsa dur (döngüyü bitir) ?
-# step-3) Eğer bu döngüdeki sayılarda 5 varsa işleme alma(toplama yapma) ?
-# step-4) Eğer bu döngüdeki sayılarda 6 varsa bir şey yapma (pass'ı ekleyiniz) ?
-# step-5) 1-10 arasındaki tek sayıları gösteriniz ve tek sayıları toplayınız ?
-# step-6) 1-10 arasındaki çift sayıları gösteriniz ve çift sayıları toplayınız ?
+
